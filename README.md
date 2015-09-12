@@ -1,5 +1,5 @@
 # time-series-reader-nw #
-## Simple time series reader written in nodejs (node-webkit) plotting chart from csv time series data using Highstocks (Highcharts)
+## Simple time series reader written in nodejs (node-webkit) plotting chart from csv time series data using Highstocks
 ### Version
 0.3.0
 
@@ -34,20 +34,20 @@ ALSO: The executable file will be created in /dist-pkt/releases/*** for each sys
 * Example:
     * File:
     
-    timestamp,CORE VOLTAGE,CPU TEMP,GPU TEMP
-    Thu Jan 15 16:25:48 2015,0.661133,49.875000,53.125000
-    Thu Jan 15 16:25:49 2015,0.677490,49.875000,53.125000
-    Thu Jan 15 16:25:49 2015,0.677490,49.875000,53.125000
-    Thu Jan 15 16:25:50 2015,0.653809,49.750000,52.875000
-    Thu Jan 15 16:25:50 2015,0.653809,49.750000,52.875000
-    Thu Jan 15 16:25:51 2015,0.654541,49.750000,53.000000
-    Thu Jan 15 16:25:51 2015,0.654541,49.750000,53.000000
-    Thu Jan 15 16:25:52 2015,0.672424,49.625000,52.875000
-    Thu Jan 15 16:25:52 2015,0.672424,49.625000,52.875000
-    Thu Jan 15 16:25:53 2015,0.705627,49.500000,52.750000
-    Thu Jan 15 16:25:53 2015,0.705627,49.500000,52.750000
-    Thu Jan 15 16:25:54 2015,0.677795,49.500000,52.750000
-    Thu Jan 15 16:25:54 2015,0.677795,49.500000,52.750000
+    timestamp,CORE VOLTAGE,CPU TEMP,GPU TEMP   
+    Thu Jan 15 16:25:48 2015,0.661133,49.875000,53.125000   
+    Thu Jan 15 16:25:49 2015,0.677490,49.875000,53.125000   
+    Thu Jan 15 16:25:49 2015,0.677490,49.875000,53.125000   
+    Thu Jan 15 16:25:50 2015,0.653809,49.750000,52.875000   
+    Thu Jan 15 16:25:50 2015,0.653809,49.750000,52.875000   
+    Thu Jan 15 16:25:51 2015,0.654541,49.750000,53.000000   
+    Thu Jan 15 16:25:51 2015,0.654541,49.750000,53.000000   
+    Thu Jan 15 16:25:52 2015,0.672424,49.625000,52.875000   
+    Thu Jan 15 16:25:52 2015,0.672424,49.625000,52.875000   
+    Thu Jan 15 16:25:53 2015,0.705627,49.500000,52.750000   
+    Thu Jan 15 16:25:53 2015,0.705627,49.500000,52.750000   
+    Thu Jan 15 16:25:54 2015,0.677795,49.500000,52.750000   
+    Thu Jan 15 16:25:54 2015,0.677795,49.500000,52.750000   
 
     * Data:
 
