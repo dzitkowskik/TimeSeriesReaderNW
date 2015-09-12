@@ -1,0 +1,14 @@
+{
+    "name": "TimeSeriesReader",
+    "version": "0.3.0",
+    "main": "index.html",
+    "window": {
+        "toolbar": false,
+        "width": 1200,
+        "height": 600
+    },
+    "dependencies": {
+        "csv-steamify": "~2.0.0",
+        "JSONStream": "~1.0.4"
+    }
+}

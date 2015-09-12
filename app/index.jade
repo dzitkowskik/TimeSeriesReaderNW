@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+    include includes/commons/_head
+    body
+        .pure-g-r
+            .pure-u-1.topHeaderSmaller
+                include includes/commons/_header
+        div.c100.p10.center#progressBar
+            span 10%
+            div.slice
+                div.bar
+                div.fill
+        .pure-g-r
+            .pure-u-1#chartPage
+                div#chart
+
+        .pure-g-r
+            .pure-u-1
+                .pure-control-group
+                    div#dropbox Drop the file here...
+
+    script.
+        ReadTimeSeries();
