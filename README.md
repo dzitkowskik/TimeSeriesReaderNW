@@ -12,9 +12,9 @@
 Grunt is used for building and deploying the app for mac, linux and windows.
 - Firstly cd to directory when you want to put the app and then: 
 ```sh
-$ git clone https://github.com/dzitkowskik/TimeSeriesReaderNW.git
-$ cd TimeSeriesReaderNW
-$ npm install
+$ git clone https://github.com/dzitkowskik/time-series-reader-nw.git
+$ cd time-series-reader-nw
+$ sudo npm install
 ```
 - To build the app type: 
 ```sh
