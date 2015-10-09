@@ -31,7 +31,7 @@ module.exports = function (grunt) {
         cssmin: {
             target: {
                 files: {
-                    'dist/<%= pkg.name %>.css': ['app/css/pure-min.css', 'app/css/circle.css', 'dist/styles.css']
+                    'dist/<%= pkg.name %>.min.css': ['app/css/pure-min.css', 'app/css/circle.css', 'dist/styles.css']
                 }
             }
         },
@@ -57,14 +57,11 @@ module.exports = function (grunt) {
                 }
             }
         },
-        nodewebkit: {
+        nwjs: {
             options: {
-                version: '0.8.3',
-                build_dir: './dist-pkg',
-                mac: true,
-                win: true,
-                linux32: true,
-                linux64: true
+                version: '0.12.2',
+                platforms: ['win32', 'win64', 'osx32', 'osx64', 'linux32', 'linux64'],
+                buildDir: './dist-pkg'
             },
             src: ['dist/**/*']
         },
@@ -106,11 +103,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jade');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-node-webkit-builder');
+    grunt.loadNpmTasks('grunt-nw-builder');
     grunt.loadNpmTasks('grunt-contrib-stylus');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['copy', 'stylus', 'cssmin', 'jade', 'jshint', 'concat', 'uglify', 'nodewebkit']);
+    grunt.registerTask('default', ['copy', 'stylus', 'cssmin', 'jade', 'jshint', 'concat', 'uglify', 'nwjs']);
     grunt.registerTask('dev', ['copy', 'stylus', 'cssmin', 'jade', 'jshint', 'concat']);
 };
